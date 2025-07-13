@@ -1,0 +1,48 @@
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.section-title:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  bottom: -8px;
+  left: 0;
+  background-color: #3b82f6;
+  border-radius: 2px;
+}
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -8px;
+  top: 0;
+  background-color: #3b82f6;
+}
+.skill-tag {
+  transition: all 0.3s ease;
+}
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+.nav-link:hover:after {
+  width: 100%;
+}
