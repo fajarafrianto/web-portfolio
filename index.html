@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fajar Ari Afrianto - Professional Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link
 			rel="stylesheet"
@@ -24,56 +25,6 @@
 				},
 			};
 		</script>
-		<style>
-			.section-title {
-				position: relative;
-				display: inline-block;
-				margin-bottom: 2rem;
-			}
-			.section-title:after {
-				content: "";
-				position: absolute;
-				width: 50%;
-				height: 4px;
-				bottom: -8px;
-				left: 0;
-				background-color: #3b82f6;
-				border-radius: 2px;
-			}
-			.timeline-item:before {
-				content: "";
-				position: absolute;
-				width: 16px;
-				height: 16px;
-				border-radius: 50%;
-				left: -8px;
-				top: 0;
-				background-color: #3b82f6;
-			}
-			.skill-tag {
-				transition: all 0.3s ease;
-			}
-			.skill-tag:hover {
-				transform: translateY(-2px);
-				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-			}
-			.nav-link {
-				position: relative;
-			}
-			.nav-link:after {
-				content: "";
-				position: absolute;
-				width: 0;
-				height: 2px;
-				bottom: 0;
-				left: 0;
-				background-color: #3b82f6;
-				transition: width 0.3s ease;
-			}
-			.nav-link:hover:after {
-				width: 100%;
-			}
-		</style>
 	</head>
 	<body class="bg-gray-50 font-sans text-gray-800">
 		<!-- Navigation -->
@@ -551,37 +502,6 @@
 			</div>
 		</footer>
 
-		<script>
-			// Mobile menu toggle
-			document
-				.getElementById("menu-toggle")
-				.addEventListener("click", function () {
-					const menu = document.getElementById("mobile-menu");
-					menu.classList.toggle("hidden");
-				});
-
-			// Smooth scrolling for navigation links
-			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-				anchor.addEventListener("click", function (e) {
-					e.preventDefault();
-
-					const targetId = this.getAttribute("href");
-					const targetElement = document.querySelector(targetId);
-
-					if (targetElement) {
-						window.scrollTo({
-							top: targetElement.offsetTop - 80,
-							behavior: "smooth",
-						});
-
-						// Close mobile menu if open
-						const mobileMenu = document.getElementById("mobile-menu");
-						if (!mobileMenu.classList.contains("hidden")) {
-							mobileMenu.classList.add("hidden");
-						}
-					}
-				});
-			});
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
