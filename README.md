@@ -91,4 +91,4 @@ Jika ada pertanyaan atau ingin terhubung:
 ---
 
 > Dibuat dengan semangat belajar dan pengembangan diri oleh Fajar Ari Afrianto.
-> Support by practicum assistant [https://github.com/arifnurrizqi](Arif Nur Rizqi)
+> Support by practicum assistant [https://github.com/arifnurrizqi/] (Arif Nur Rizqi)
